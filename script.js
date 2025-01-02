@@ -11,7 +11,7 @@ function playGame() {
   // variable initializations
   const START_MESSAGE = "Let's play...Rock-Paper-Scissors! Best of 5 wins the game."
   const WIN_MESSAGE = "Player has won!"
-  const LOSE_MESSAGE = "Human has won!"
+  const LOSE_MESSAGE = "Computer has won!"
   let humanScore = 0;
   let computerScore = 0;
   let winnerValue = 0;
