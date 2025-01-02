@@ -12,6 +12,7 @@ function playGame() {
   const START_MESSAGE = "Let's play...Rock-Paper-Scissors! Best of 5 wins the game."
   const WIN_MESSAGE = "Player has won!"
   const LOSE_MESSAGE = "Computer has won!"
+  const TIE_MESSAGE = "Tie!"
   let humanScore = 0;
   let computerScore = 0;
   let winnerValue = 0;
@@ -33,8 +34,10 @@ function playGame() {
   // declare winner at the end of five rounds
   if (humanScore > computerScore) {
     console.log(WIN_MESSAGE + ` Final Score: ${humanScore} to ${computerScore}.`);
-  } else {
+  } else if (humanScore < computerScore) {
     console.log(LOSE_MESSAGE + ` Final Score: ${computerScore} to ${humanScore}.`);  
+  } else {
+    console.log(TIE_MESSAGE + ` Final Score: ${computerScore} to ${humanScore}.`);
   }
   
 }
